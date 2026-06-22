@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You - Imam Ghazali</title>
+  <style>
+    :root {
+      --bg-primary: #0B5E3F;
+      --bg-secondary: #FAF3E0;
+      --bg-special: #EEEEE4;
+      --text-color: #1e1e2a;
+      --accent: #b8860b;
+      --accent-light: #d4a84a;
+      --shadow-sm: 0 4px 20px rgba(0, 0, 0, 0.06);
+      --radius-lg: 16px;
+      --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: var(--bg-primary);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      margin: 0;
+    }
+
+    .thank-you-container {
+      background: var(--bg-secondary);
+      max-width: 600px;
+      width: 100%;
+      padding: 3.5rem 2.5rem;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      animation: fadeInUp 0.6s ease;
+    }
+
+    /* Decorative top line */
+    .thank-you-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: var(--accent);
+      opacity: 0.6;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Success icon */
+    .success-icon {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      display: block;
+      animation: bounceIn 0.8s ease;
+    }
+
+    @keyframes bounceIn {
+      0% { transform: scale(0); }
+      50% { transform: scale(1.2); }
+      70% { transform: scale(0.9); }
+      100% { transform: scale(1); }
+    }
+
+    .thank-you-container h2 {
+      color: var(--text-color);
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.5px;
+    }
+
+    .thank-you-container h2::before {
+      content: '✦ ';
+      color: var(--accent);
+      font-weight: 400;
+    }
+
+    .thank-you-container p {
+      color: var(--text-color);
+      font-size: 1rem;
+      line-height: 1.6;
+      opacity: 0.8;
+      margin-bottom: 0.5rem;
+    }
+
+    .thank-you-container .sub-message {
+      color: var(--text-color);
+      font-size: 0.9rem;
+      opacity: 0.6;
+      margin-bottom: 2rem;
+      font-style: italic;
+      border-top: 1px solid rgba(184, 134, 11, 0.12);
+      padding-top: 1.5rem;
+    }
+
+    /* Decorative divider */
+    .divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.8rem;
+      margin: 1.5rem 0;
+    }
+
+    .divider span {
+      color: var(--accent);
+      font-size: 0.6rem;
+      letter-spacing: 4px;
+      opacity: 0.4;
+    }
+
+    .divider .line {
+      flex: 1;
+      height: 1px;
+      background: rgba(184, 134, 11, 0.12);
+    }
+
+    /* Back button */
+    .back-btn {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--bg-secondary);
+      padding: 0.9rem 2.5rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+      text-decoration: none;
+      letter-spacing: 0.5px;
+      margin-top: 1rem;
+    }
+
+    .back-btn:hover {
+      background: #a0750a;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(184, 134, 11, 0.25);
+    }
+
+    .back-btn:active {
+      transform: translateY(0);
+    }
+
+    /* Small note */
+    .note {
+      margin-top: 1.5rem;
+      color: var(--text-color);
+      font-size: 0.75rem;
+      opacity: 0.4;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .thank-you-container {
+        padding: 2.5rem 1.5rem;
+        margin: 1rem;
+      }
+
+      .success-icon {
+        font-size: 3rem;
+      }
+
+      .thank-you-container h2 {
+        font-size: 1.5rem;
+      }
+
+      .thank-you-container p {
+        font-size: 0.9rem;
+      }
+
+      .back-btn {
+        padding: 0.8rem 2rem;
+        font-size: 0.9rem;
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .thank-you-container {
+        padding: 2rem 1.2rem;
+      }
+
+      .success-icon {
+        font-size: 2.5rem;
+      }
+
+      .thank-you-container h2 {
+        font-size: 1.3rem;
+      }
+
+      .thank-you-container p {
+        font-size: 0.85rem;
+      }
+
+      .back-btn {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="thank-you-container">
+    <span class="success-icon">✅</span>
+    <h2>Application Sent Successfully!</h2>
+    <p>We'll contact you within 3 days.</p>
+    
+    <div class="divider">
+      <span class="line"></span>
+      <span>◆ ◆ ◆</span>
+      <span class="line"></span>
+    </div>
+    
+    <p class="sub-message">
+      "No action is too small when done with sincere intention."<br>
+      — Imam Al-Ghazali
+    </p>
+    
+    <a href="index.html" class="back-btn">← Back to Home</a>
+    <p class="note">You will receive a confirmation email shortly</p>
+  </div>
+</body>
+</html>
