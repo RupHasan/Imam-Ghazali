@@ -134,8 +134,10 @@
           Fill the form below. We'll reach out within 3 days.
         </p>
 
-        <!-- ONLY ONE FORM - add action here -->
-        <form>
+        <form action="https://formsubmit.co/gazzalikushtia@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New Join Us Application">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://ruphasan.github.io/Imam-Ghazali/join-us.html">
           <input type="text" name="name" placeholder="Full Name" data-en-placeholder="Full Name" data-bn-placeholder="পূর্ণ নাম" required>
           <input type="email" name="email" placeholder="Email" data-en-placeholder="Email" data-bn-placeholder="ইমেইল" required>
           <input type="tel" name="phone" placeholder="Phone" data-en-placeholder="Phone" data-bn-placeholder="ফোন নম্বর">
@@ -177,8 +179,10 @@
 
       <!-- Right Column: Contact Form -->
       <div class="contact-form">
-        <form>
-          <input type="text" placeholder="Full Name" name="contact_name"data-en-placeholder="Full Name" data-bn-placeholder="পূর্ণ নাম">
+        <form action="https://formsubmit.co/gazzalikushtia@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New Contact Form Message">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" placeholder="Full Name" name="contact_name" data-en-placeholder="Full Name" data-bn-placeholder="পূর্ণ নাম">
           <input type="email"  name="contact_email" placeholder="Email Address" data-en-placeholder="Email Address" data-bn-placeholder="ইমেইল ঠিকানা">
           <textarea rows="4" name="contact_message" placeholder="Message / Question" data-en-placeholder="Message / Question" data-bn-placeholder="বার্তা / প্রশ্ন"></textarea>
           <button type="submit" data-en="Send Message" data-bn="বার্তা পাঠান">Send Message</button>
@@ -190,7 +194,6 @@
       We typically reply within 2-3 business days.
     </p>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
